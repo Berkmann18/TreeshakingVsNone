@@ -1,0 +1,28 @@
+{
+  "name": "nodetreeshaking",
+  "version": "1.0.0",
+  "description": "Treeshaking vs no treeshaking on the backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Berkmann18/TreeshakingVsNone.git"
+  },
+  "keywords": [
+    "treeshaking",
+    "node"
+  ],
+  "author": "Maximilian Berkmann <maxieberkmann@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Berkmann18/TreeshakingVsNone/issues"
+  },
+  "homepage": "https://github.com/Berkmann18/TreeshakingVsNone#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "chalk": "^2.4.1",
+    "math": "0.0.3"
+  }
+}
