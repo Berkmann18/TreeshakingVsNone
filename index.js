@@ -38,7 +38,7 @@ const opts = {
 
 const sum = new Suite('sum', opts),
   sumNProd = new Suite('sum&prod', opts),
-  andFactorial = new Suite('sum&prod&factorial', opts);
+  andGcd = new Suite('sum&prod&gcd', opts);
 
 sum.add('without', () => {
     const math = require('math');
@@ -66,16 +66,16 @@ sumNProd.add('without', () => {
   })
   .run({ 'async': true });
 
-// andFactorial.add('without', () => {
-//     const math = require('math');
-//     let x = math.sum([9, 10, 11]);
-//     let y = math.prod([4, 2, 1]);
-//     let z = math.factorial(42)
-//   })
-//   .add('with', () => {
-//     const { sum, prod, factorial } = require('math');
-//     let x = sum([9, 10, 11]);
-//     let y = prod([4, 2, 1]);
-//     let z = factorial(42)
-//   })
-//   .run({ 'async': true });
+andGcd.add('without', () => {
+    const math = require('math');
+    let x = math.sum([9, 10, 11]);
+    let y = math.prod([4, 2, 1]);
+    let z = math.gcd(30, 70)
+  })
+  .add('with', () => {
+    const { sum, prod, gcd } = require('math');
+    let x = sum([9, 10, 11]);
+    let y = prod([4, 2, 1]);
+    let z = gcd(30, 70)
+  })
+  .run({ 'async': true });

@@ -1,0 +1,34 @@
+without x 489,514 ops/sec ±7.40% (81 runs sampled)
+without x 506,029 ops/sec ±5.31% (84 runs sampled)
+without x 503,814 ops/sec ±3.56% (90 runs sampled)
+with x 509,281 ops/sec ±6.69% (86 runs sampled)
+	Benchmark: sum&prod
+The fastest is with
+The slowest is without
+
+Scores (/1): 
+
+without: 0+ / 1- = -1
+with: 1+ / 0- = 1
+withDirect: 0+ / 0- = 0
+with x 527,842 ops/sec ±4.14% (94 runs sampled)
+with x 477,899 ops/sec ±7.22% (89 runs sampled)
+	Benchmark: sum&prod&gcd
+The fastest is without,with
+The slowest is with,without
+
+Scores (/2): 
+
+without: 1+ / 2- = -1
+with: 2+ / 1- = 1
+withDirect: 0+ / 0- = 0
+withDirect x 518,803 ops/sec ±5.41% (89 runs sampled)
+	Benchmark: sum
+The fastest is with
+The slowest is without
+
+Scores (/3): 
+
+without: 1+ / 3- = -2
+with: 3+ / 1- = 2
+withDirect: 0+ / 0- = 0
